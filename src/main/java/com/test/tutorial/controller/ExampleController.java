@@ -1,6 +1,5 @@
 package com.test.tutorial.controller;
 
-
 import com.test.tutorial.model.Example;
 import com.test.tutorial.service.ExamplesService;
 import io.swagger.annotations.*;
