@@ -1,15 +1,18 @@
 This project will show a simple spring boot application. It will start a H2 database and make available some services to see and manipulate this data, as well some examples how to implementations.
 
 Pre-requisites:
+
     * jdk1.8
     * Maven
 
 How to test:
+
     * Use swagger
         or
     * Import Tutorial.postman.json in postman aplication.
 
 Some endpoints useful:
+
     * http://localhost:8099/swagger-ui.html
         this will show all endpoints.
         
@@ -24,6 +27,7 @@ Some endpoints useful:
         These will show some information about service.
             
 Useful Links:
+
     * How to start a project: https://start.spring.io/
                               https://github.com/spring-io/initializr/
                               
