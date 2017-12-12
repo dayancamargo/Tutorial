@@ -106,6 +106,6 @@ public class BatataService {
             return batataRepository.save(new Batata(id, batata)).dto();
         }
 
-        return null;
+        throw new RuntimeException("Batata not found to update.");
     }
 }
