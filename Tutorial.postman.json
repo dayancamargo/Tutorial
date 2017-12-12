@@ -1,0 +1,97 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Tutorial",
+		"_postman_id": "5d4eecab-4dca-6507-928b-1522613a730c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET-BATATA",
+			"request": {
+				"url": "http://localhost:8099/batata",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET-BYID-BATATA",
+			"request": {
+				"url": "http://localhost:8099/batata/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET-BYTYPE-BATATA",
+			"request": {
+				"url": "http://localhost:8099/batata/type/ata",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET-BYIDS-BATATA",
+			"request": {
+				"url": "http://localhost:8099/batata/ids/1,3",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET-COUNT-BATATA",
+			"request": {
+				"url": "http://localhost:8099/batata/count",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-BATATA",
+			"request": {
+				"url": "http://localhost:8099/batata/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST-POTATO",
+			"request": {
+				"url": "http://localhost:8099/batata/",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Some potato\",\n\t\"type\" : \"Meh potato\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

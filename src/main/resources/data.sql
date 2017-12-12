@@ -13,7 +13,7 @@ CREATE TABLE batata (
   last_modification TIMESTAMP
 );
 
---Create a new table 'batata'
+--Create a new table 'mimimi'
 CREATE TABLE mimimi (
   id   INTEGER AUTO_INCREMENT PRIMARY KEY,
   type VARCHAR(50),
@@ -26,7 +26,7 @@ INSERT INTO batata(name, type, last_modification) VALUES ('batata',   'Batata', 
 INSERT INTO batata(name, type, last_modification) VALUES ('patatas',  'Patata española', CURRENT_TIMESTAMP);
 INSERT INTO batata(name, type, last_modification) VALUES ('kartofel', 'Rossiyskiy kartofel', CURRENT_TIMESTAMP);
 
---Insert some batata's  data
+--Insert some mimimi's  data
 INSERT INTO mimimi(type, description_mimimi) VALUES ('chorar', 'mi mi mi mi');
 INSERT INTO mimimi(type, description_mimimi) VALUES ('reclamar', 'mimimimi');
 INSERT INTO mimimi(type, description_mimimi) VALUES ('meh', 'meh');
