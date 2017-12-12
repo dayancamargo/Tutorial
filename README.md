@@ -1,8 +1,8 @@
 This project will show a simple spring boot application. It will start a H2 database and make available some services to see and manipulate this data, as well some examples how to implementations.
 
 Pre-requisites:
- jdk1.8
- Maven
+ * jdk1.8
+ * Maven
 
 Some endpoints useful:
     * http://localhost:8099/swagger-ui.html
