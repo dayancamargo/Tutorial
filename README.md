@@ -12,12 +12,13 @@ How to test:
 Some endpoints useful:
     * http://localhost:8099/swagger-ui.html
         this will show all endpoints.
-
+    * http://localhost:8099/h2
+        H2 console (JDBC url: jdbc:h2:mem:testdb    user:sa     pass: '' )
     * http://localhost:8098/health
     * http://localhost:8098/mappings
     * http://localhost:8098/beans
         These will show some information about service.
-
+    
 Useful Links:
     * How to start a project: https://start.spring.io/
                               https://github.com/spring-io/initializr/
