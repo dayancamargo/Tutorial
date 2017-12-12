@@ -4,6 +4,11 @@ Pre-requisites:
  * jdk1.8
  * Maven
 
+How to test:
+    * Use swagger
+    or
+    * Import Tutorial.postman.json in postman aplication.
+
 Some endpoints useful:
     * http://localhost:8099/swagger-ui.html
         this will show all endpoints.
