@@ -18,7 +18,10 @@ Some endpoints useful:
         
     * http://localhost:8099/h2
         H2 console (JDBC url: jdbc:h2:mem:testdb    user:sa     pass: '' )
-        
+
+    * http://localhost:8098/log
+        Show a endpoint with all logs mapped (see application.properties)
+
     * http://localhost:8098/health
     
     * http://localhost:8098/mappings

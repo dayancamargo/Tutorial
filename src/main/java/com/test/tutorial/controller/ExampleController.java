@@ -57,6 +57,7 @@ public class ExampleController {
     @RequestMapping(produces = { MediaType.APPLICATION_JSON_UTF8_VALUE },
                     consumes = { MediaType.APPLICATION_JSON_UTF8_VALUE},  //this return will be parsed to json
                       method = RequestMethod.POST)              //this method is a post http operation
+    @ResponseStatus(HttpStatus.CREATED)
     public List<Example> create(@ApiParam(name = "Example", value = "Example to be saved", required = true)  // used in swagger, describes a parameter
                                 @Validated // validate all 'constraints'
                                 @RequestBody Example example){ // a object to be used, this will try parse a json/txt/xml (consumes define) to a object

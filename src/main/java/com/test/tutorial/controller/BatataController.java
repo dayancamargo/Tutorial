@@ -45,7 +45,6 @@ public class BatataController {
         return ResponseEntity.ok(batataService.count());
     }
 
-
     @ApiOperation(value = "Simple find all batatas by type")
     @RequestMapping(produces = { MediaType.APPLICATION_JSON_UTF8_VALUE },
                       method = RequestMethod.GET,
@@ -86,9 +85,8 @@ public class BatataController {
     }
 
     @ApiOperation(value = "Create a simple batata")
-    @RequestMapping(produces = { MediaType.APPLICATION_JSON_UTF8_VALUE },
-                    consumes = { MediaType.APPLICATION_JSON_UTF8_VALUE},
-                      method = RequestMethod.POST)
+    @PostMapping(produces = { MediaType.APPLICATION_JSON_UTF8_VALUE },
+                 consumes = { MediaType.APPLICATION_JSON_UTF8_VALUE})
     @ResponseStatus(HttpStatus.CREATED)
     public BatataDto create(@ApiParam(name = "Batata", value = "Batata to be saved", required = true)
                             @Validated @RequestBody BatataDto batata) {
@@ -97,10 +95,9 @@ public class BatataController {
     }
 
     @ApiOperation(value = "Create a simple batata")
-    @RequestMapping(produces = { MediaType.APPLICATION_JSON_UTF8_VALUE },
-                    consumes = { MediaType.APPLICATION_JSON_UTF8_VALUE},
-                      method = RequestMethod.PUT,
-                      path = "/{id}")
+    @PutMapping(produces = { MediaType.APPLICATION_JSON_UTF8_VALUE },
+                consumes = { MediaType.APPLICATION_JSON_UTF8_VALUE},
+                    path = "/{id}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<BatataDto> update(@ApiParam(name = "id", value = "Batata id", required = true)
                                             @PathVariable(value = "id", required = true) Integer id,
@@ -116,9 +113,8 @@ public class BatataController {
         }
     }
 
-    @RequestMapping(path = "/{id}",
-                  method = RequestMethod.DELETE,
-                produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    @DeleteMapping(path = "/{id}",
+               produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ApiOperation(value = "Delete a batata")
     public ResponseEntity delete(@ApiParam(name = "id", value = "Batata id", required = true)
                                  @PathVariable(value = "id", required = true) Integer id) {
